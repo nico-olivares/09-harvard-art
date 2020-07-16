@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvard Art</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div id="app">
+        <form id="search">
+          <h1>
+            Harvard Art Museums' Private Collection 
+          </h1>
+          <fieldset>
+            <label for="keywords">Keywords</label>
+            <input id="keywords" type="text" placeholder="enter keywords..." />
+          </fieldset>
+          <fieldset>
+            <label for="select-classification">Classification <span class="classification-count"></span></label>
+            <select name="classification" id="select-classification">
+              <option value="any">Any</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="select-century">Century <span class="century-count"></span></label>
+            <select name="century" id="select-century">
+              <option value="any">Any</option>
+            </select>
+          </fieldset>
+          <button>SEARCH</button>
+        </form>
+        <aside id="preview">
+          <header class="pagination">
+            <p class='query'></p>
+            <button disabled class="previous">Previous</button>
+            <button disabled class="next">Next</button>
+          </header>
+          <section class="results"></section>
+        </aside>
+        <main id="feature">
+        </main>
+      </div>
+      <div id="loading">
+        <h2 class="message">Searching...</h2>
+      </div>
+</body>
+</html>
