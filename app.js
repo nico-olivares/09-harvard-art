@@ -1,6 +1,9 @@
+
 //Global variables ***********************************************************************
+
+
 const BASE_URL = 'https://api.harvardartmuseums.org';
-const KEY = process.env.API_KEY; // USE YOUR KEY HERE
+const KEY = "apikey=298b7ee1-7817-4e54-9fdb-3b4fb87df97d"; // USE YOUR KEY HERE
 
 //Bootstrap
 
